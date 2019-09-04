@@ -31,8 +31,11 @@ public class MoviesController {
 //	注入
 	@RequestMapping("list.do")
 	public ModelAndView selectAllMovies(@RequestParam(required=false,defaultValue="1")Integer pageNum,String mname){
+
 		System.out.println("111111111111------");
 		System.out.println("2222222222222--------");
+
+		System.out.println("3333333333333");
 		
 		ModelAndView mv = new ModelAndView();
 		Map<String, Object> map = new HashMap<String, Object>();
@@ -40,6 +43,9 @@ public class MoviesController {
 		map.put("mname", mname);
 		System.out.println("-----"+mname);
 		PageHelper.startPage(pageNum, 3);
+		System.out.println("-----------------");
+		System.out.println("*************************");
+		System.out.println("11111111111111111");
 		List<Movies> list = ms.selectAllMovies(map);
 		PageInfo<Movies> page = new PageInfo<>(list);
 //		分页
