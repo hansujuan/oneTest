@@ -32,6 +32,7 @@ public class MoviesController {
 	@RequestMapping("list.do")
 	public ModelAndView selectAllMovies(@RequestParam(required=false,defaultValue="1")Integer pageNum,String mname){
 		System.out.println("111111111111");
+		System.out.println("2222222222222");
 		
 		ModelAndView mv = new ModelAndView();
 		Map<String, Object> map = new HashMap<String, Object>();
