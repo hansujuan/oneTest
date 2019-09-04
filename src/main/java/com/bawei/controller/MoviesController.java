@@ -35,6 +35,7 @@ public class MoviesController {
 		Map<String, Object> map = new HashMap<String, Object>();
 		
 		map.put("mname", mname);
+		System.out.println("-----"+mname);
 		PageHelper.startPage(pageNum, 3);
 		List<Movies> list = ms.selectAllMovies(map);
 		PageInfo<Movies> page = new PageInfo<>(list);
