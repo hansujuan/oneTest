@@ -53,6 +53,8 @@ public class MoviesController {
 		mv.getModelMap().put("page", page);
 		mv.getModelMap().put("mname", mname);
 //		模糊
+		
+		sss();
 		return mv;
 	}
 //	列表的方法，包括模糊查询
@@ -96,4 +98,9 @@ public class MoviesController {
 		return str;
 	}
 //	修改的方法
+	
+	
+	public void sss(){
+		System.out.println("你最近过的好吗？");
+	}
 }
