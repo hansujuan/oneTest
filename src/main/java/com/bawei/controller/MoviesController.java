@@ -37,6 +37,9 @@ public class MoviesController {
 		map.put("mname", mname);
 		System.out.println("-----"+mname);
 		PageHelper.startPage(pageNum, 3);
+		System.out.println("-----------------");
+		System.out.println("*************************");
+		System.out.println("11111111111111111");
 		List<Movies> list = ms.selectAllMovies(map);
 		PageInfo<Movies> page = new PageInfo<>(list);
 //		分页
